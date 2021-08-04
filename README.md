@@ -1,7 +1,8 @@
 # Digital Portfolio
+
 ![sCREENSHOT OF LANDING PAGE](https://user-images.githubusercontent.com/54403943/128261646-7b763e90-16df-4b0f-bd69-d57ca0acded5.png)
 
-### <a href="https://resume-portfolio-starter-pack.herokuapp.com">LIVE HERE</a>
+### <a href="https://vigilant-bell-79504c.netlify.app/ target="_blank" rel="noopener noreferrer" >LIVE HERE</a>
 
 ## Resume Starter Pack Description
 
@@ -15,17 +16,17 @@ Firstly, you will need to download the latest version of Node by <a href="https:
 
 Next, you will need to run the following command in the Terminal to clone the repo onto your machine.
 
-```git clone https://github.com/sonnysangha/Resume-Portfolio-Starter-pack.git```
+`git clone https://github.com/sonnysangha/Resume-Portfolio-Starter-pack.git`
 
 ## 3. Install Dependancies
 
 Next, you need to install all the dependancies using:
 
-```npm install```
+`npm install`
 
 Once this is done, you can start the app with:
 
-```npm start```
+`npm start`
 
 ## 4. Fill in your personal info
 
@@ -41,11 +42,11 @@ Once all the formatting and data input is finalised, run `npm run build`. This w
 
 ## 8. Host Resume Online
 
-1) Open the build folder in the finder screen
-2) Go to <a href="https://www.netlify.com/">Netlify</a> and set up a profile
-3) Go to the 'Sites Tab'
-4) Simply Drag and drop the 'Build' Folder into the designated upload space
-5) The app will begin deploying & the deployment URL will be presented!
+1. Open the build folder in the finder screen
+2. Go to <a href="https://www.netlify.com/">Netlify</a> and set up a profile
+3. Go to the 'Sites Tab'
+4. Simply Drag and drop the 'Build' Folder into the designated upload space
+5. The app will begin deploying & the deployment URL will be presented!
 
 🚀 That's it, this page is now LIVE!!!
 
