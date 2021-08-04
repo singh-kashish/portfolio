@@ -2,7 +2,7 @@
 
 ![sCREENSHOT OF LANDING PAGE](https://user-images.githubusercontent.com/54403943/128261646-7b763e90-16df-4b0f-bd69-d57ca0acded5.png)
 
-### <a href="https://vigilant-bell-79504c.netlify.app/ target="_blank" rel="noopener noreferrer" >LIVE HERE</a>
+### <a href="https://vigilant-bell-79504c.netlify.app/ target="\_blank" rel="noopener noreferrer"">LIVE HERE</a>
 
 ## Resume Starter Pack Description
 
