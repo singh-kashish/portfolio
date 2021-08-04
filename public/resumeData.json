@@ -1,0 +1,123 @@
+{
+  "main": {
+    "name": "Kashish Singh",
+    "occupation": "Web Developer",
+    "description": "I eat, sleep and breathe React",
+    "image": "profilepic.jpg",
+    "bio": "Hi there! I am Kashish! Welcome to my Portfolio. I've been coding for some time now. As a Full Stack Developer I've worked on various projects. I usually work with ReactJs , ExpressJs , NodeJs , POSTGRESQL , MONGODB . I'm passionate towards learning new skills and frameworks. I have worked on and deliverd projects , which have transformed me into a better team player and have also improved my individual efficiency. I can work under pressure as well and produce results with deadlines. I am eager to find a team and an Organization to which I can add some value to .  ",
+    "contactmessage": "Get in touch with me for Collaboration / Job Offers",
+    "email": "ks1147@srmist.edu.in",
+    "phone": "+91 9777143102",
+    "address": {
+      "street": "",
+      "city": "India",
+      "state": "",
+      "zip": ""
+    },
+    "website": "https://www.papareact.com/course",
+    "resumedownload": "http://papareact.com",
+    "social": [
+     
+      {
+        "name": "linkedin",
+        "url": "https://www.linkedin.com/in/singh-kashish",
+        "className": "fa fa-linkedin"
+      },
+      {
+        "name": "instagram",
+        "url": "https://www.instagram.com/singh_kashish28/",
+        "className": "fa fa-instagram"
+      },
+      {
+        "name": "github",
+        "url": "https://github.com/singh-kashish",
+        "className": "fa fa-github"
+      }
+    ]
+  },
+  "resume": {
+    "skillmessage": "My Programming Language Proficiency with Google",
+    "education": [
+      {
+        "school": "SRMIST",
+        "degree": "Bachelor's Degree, Computer Science & Engineering",
+        "graduated": "June 2022",
+        "description": "Currently in Senior Year of College."
+      }
+    ],
+    "work": [
+      {
+        "company": "",
+        "title": "",
+        "years": "",
+        "description": ""
+      }
+    ],
+    "skills": [
+      {
+        "name": "ReactJs",
+        "level": "80%"
+      },
+      {
+        "name": "NodeJs",
+        "level": "80%"
+      },
+      {
+        "name": "Git",
+        "level": "70%"
+      },
+      {
+        "name": "JavaScript",
+        "level": "80%"
+      },
+      {
+        "name": "Web Development",
+        "level": "80%"
+      },
+      {
+        "name":"C++",
+        "level":"80%"
+      }
+    ]
+  },
+  "portfolio": {
+    "projects": [
+      {
+        "title": "Amazon Clone (React JS)",
+        "category": "Full Stack",
+        "image": "amazon.png",
+        "url": "https://clone-54ee8.web.app/"
+      },
+      {
+        "title": "YouTube Player (React JS)",
+        "category": "",
+        "image": "yt.png",
+        "url": "https://search-313918.web.app/"
+      },
+      {
+        "title": "YelpCamp (React JS)",
+        "category": "Full Stack",
+        "image": "yelpcamp.png",
+        "url": "https://guarded-beyond-33043.herokuapp.com/"
+      },
+      {
+        "title": "Twitcher (React JS)",
+        "category": "Full Stack",
+        "image": "twitcher.png",
+        "url": "https://github.com/singh-kashish/twitcher"
+      }
+    ]
+  },
+  "testimonials": {
+    "testimonials": [
+      {
+        "text": "Kashish is absolutely excellent, his depth and thirst of knowledge is simply great... I would definitely recommend him.",
+        "user": "Rohit"
+      },
+      {
+        "text": "Learning and working on new tech with Kashish has been AWESOME, he's really approachable , patient , is a great listener as well. ",
+        "user": "Akash"
+      }
+    ]
+  }
+}
