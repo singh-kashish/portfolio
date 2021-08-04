@@ -3,6 +3,7 @@
 ![sCREENSHOT OF LANDING PAGE](https://user-images.githubusercontent.com/54403943/128261646-7b763e90-16df-4b0f-bd69-d57ca0acded5.png)
 
 ### <a href="https://vigilant-bell-79504c.netlify.app/" target="\_blank" rel="noopener noreferrer">🚀 LIVE HERE 🚀</a>
+[![Netlify Status](https://api.netlify.com/api/v1/badges/0c2ed22c-cfef-4b27-920c-174deb88f75a/deploy-status)](https://app.netlify.com/sites/vigilant-bell-79504c/deploys)
 
 ## Resume Starter Pack Description
 
