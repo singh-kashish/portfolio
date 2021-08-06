@@ -17,7 +17,6 @@
     "website": "https://www.papareact.com/course",
     "resumedownload": "https://drive.google.com/file/d/1BmsrUrhrklBVNV35YPykjY_5FRrUWE9C/view?usp=sharing",
     "social": [
-     
       {
         "name": "linkedin",
         "url": "https://www.linkedin.com/in/singh-kashish",
@@ -75,8 +74,8 @@
         "level": "80%"
       },
       {
-        "name":"C++",
-        "level":"80%"
+        "name": "C++",
+        "level": "80%"
       }
     ]
   },
@@ -87,6 +86,12 @@
         "category": "Full Stack",
         "image": "amazon.png",
         "url": "https://clone-54ee8.web.app/"
+      },
+      {
+        "title": "AirBnB Clone (NextJs)",
+        "category": "Full Stack",
+        "image": "airbnb.png",
+        "url": "https://airbnb-smoky.vercel.app/"
       },
       {
         "title": "YouTube Player (React JS)",
