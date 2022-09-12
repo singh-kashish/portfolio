@@ -14,8 +14,8 @@
       "state": "",
       "zip": ""
     },
-    "website": "https://www.papareact.com/course",
-    "resumedownload": "https://drive.google.com/file/d/141LWMaJeNjjggk5EQRaJp1D3LPf9wu6E/view?usp=sharing",
+    "website": "vigilant-bell-79504c.netlify.app",
+    "resumedownload": "https://drive.google.com/file/d/1htaQOtfFz1MQl42iZLKdtvDkZhHWXWRr/view?usp=sharing",
     "social": [
       {
         "name": "linkedin",
@@ -41,7 +41,7 @@
         "school": "SRMIST",
         "degree": "Bachelor's Degree, Computer Science & Engineering",
         "graduated": "June 2022",
-        "description": "Currently in Senior Year of College."
+        "description": "Passed out of college."
       }
     ],
     "work": [
@@ -55,27 +55,27 @@
     "skills": [
       {
         "name": "ReactJs",
-        "level": "80%"
+        "level": "95%"
       },
       {
         "name": "NodeJs",
-        "level": "80%"
+        "level": "95%"
       },
       {
         "name": "Git",
-        "level": "70%"
+        "level": "95%"
       },
       {
         "name": "JavaScript",
-        "level": "80%"
+        "level": "95%"
       },
       {
         "name": "Web Development",
-        "level": "80%"
+        "level": "95%"
       },
       {
         "name": "C++",
-        "level": "80%"
+        "level": "95%"
       }
     ]
   },
@@ -84,7 +84,7 @@
       {
         "title":"Reddit Clone (NextJS)",
         "category":"Full Stack",
-        "image":"reddit.png",
+        "image":"redditClone.png",
         "url":"https://reddit-clone-2-singh-kashish.vercel.app/"
       },
       {
