@@ -2,9 +2,9 @@
 
 ![sCREENSHOT OF LANDING PAGE](https://user-images.githubusercontent.com/54403943/128261646-7b763e90-16df-4b0f-bd69-d57ca0acded5.png)
 
-### <a href="https://vigilant-bell-79504c.netlify.app/" target="\_blank" rel="noopener noreferrer">🚀 LIVE HERE 🚀</a>
+### <a href="https://lucent-narwhal-310044.netlify.app/" target="\_blank" rel="noopener noreferrer">🚀 LIVE HERE 🚀</a>
 
-[![Netlify Status](https://api.netlify.com/api/v1/badges/16720444-d4e2-4526-85ce-d68442059a7a/deploy-status)](https://app.netlify.com/sites/vigilant-bell-79504c/deploys)
+[![Netlify Status](https://api.netlify.com/api/v1/badges/16720444-d4e2-4526-85ce-d68442059a7a/deploy-status)](https://lucent-narwhal-310044.netlify.app/)
 
 ## Resume Starter Pack Description
 
