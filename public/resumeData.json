@@ -15,7 +15,7 @@
       "zip": ""
     },
     "website": "https://www.papareact.com/course",
-    "resumedownload": "https://drive.google.com/file/d/1BmsrUrhrklBVNV35YPykjY_5FRrUWE9C/view?usp=sharing",
+    "resumedownload": "https://drive.google.com/file/d/141LWMaJeNjjggk5EQRaJp1D3LPf9wu6E/view?usp=sharing",
     "social": [
       {
         "name": "linkedin",
@@ -35,7 +35,7 @@
     ]
   },
   "resume": {
-    "skillmessage": "My Programming Language Proficiency with Google",
+    "skillmessage": "My Programming Language Proficiency with Google just triples xD",
     "education": [
       {
         "school": "SRMIST",
@@ -81,6 +81,12 @@
   },
   "portfolio": {
     "projects": [
+      {
+        "title":"Reddit Clone (NextJS)",
+        "category":"Full Stack",
+        "image":"reddit.png",
+        "url":"https://reddit-clone-2-singh-kashish.vercel.app/"
+      },
       {
         "title": "Amazon Clone (React JS)",
         "category": "Full Stack",
