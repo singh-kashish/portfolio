@@ -14,7 +14,7 @@
       "state": "",
       "zip": ""
     },
-    "website": "vigilant-bell-79504c.netlify.app",
+    "website": "https://lucent-narwhal-310044.netlify.app/",
     "resumedownload": "https://drive.google.com/file/d/1htaQOtfFz1MQl42iZLKdtvDkZhHWXWRr/view?usp=sharing",
     "social": [
       {
@@ -46,10 +46,10 @@
     ],
     "work": [
       {
-        "company": "",
-        "title": "",
-        "years": "",
-        "description": ""
+        "company": "SalesCaptain",
+        "title": "FrontEnd Dev (Intern)",
+        "years": "2 months",
+        "description": "I worked mostly on solving various Jira tickets,based on UI glitches related to React Components,materialUi's components...Also converted UI/UX from Figma to React components for various pages on their application, also wrote email templates using HTML and CSS."
       }
     ],
     "skills": [
@@ -76,11 +76,23 @@
       {
         "name": "C++",
         "level": "95%"
+      },{
+        "name": "NextJs",
+        "level": "95%"
+      },{
+        "name": "TypeScript",
+        "level": "75%"
       }
     ]
   },
   "portfolio": {
     "projects": [
+      {
+        "title":"YouTube Clone (NextJS)",
+        "category":"Full Stack",
+        "image":"youtubeClone.png",
+        "url":"https://youtube-clone-singh-kashish.vercel.app/"
+      },
       {
         "title":"Reddit Clone (NextJS)",
         "category":"Full Stack",
@@ -128,6 +140,10 @@
       {
         "text": "Learning and working on new tech with Kashish has been AWESOME, he's really approachable , patient , is a great listener as well. ",
         "user": "Akash"
+      },
+      {
+        "text": "He's able to convert design to code using React,Html...He's exceptionally skilled with CSS.",
+        "user": "Abhishek"
       }
     ]
   }
