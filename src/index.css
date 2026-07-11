@@ -1,0 +1,92 @@
+@import "tailwindcss";
+
+:root {
+  --bg-primary: #0a0a0a;
+  --bg-secondary: #111111;
+  --bg-card: #141414;
+  --text-primary: #e2e2de;
+  --text-secondary: #4a5568;
+  --text-dim: #2a2a28;
+  --accent: #64ffda;
+  --accent-dim: rgba(100, 255, 218, 0.08);
+  --accent-border: rgba(100, 255, 218, 0.15);
+  --border: #1a1a1a;
+  --border-hover: #2a2a28;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+html {
+  /* 
+    NOTE: Do NOT set overflow:hidden here — layout uses 
+    page-level scroll (window.scrollY). The sidebar is sticky top-0 
+    max-h-screen, not a fixed-position panel with a separate scroll container.
+  */
+  background: var(--bg-primary);
+  scroll-behavior: smooth;
+}
+
+body {
+  background: var(--bg-primary);
+  color: var(--text-primary);
+  font-family: 'Inter', sans-serif;
+  /* antialiasing */
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  line-height: 1.625; /* leading-relaxed */
+}
+
+/* Page-wide cursor glow — covers entire viewport, z-index 0 */
+#page-glow {
+  pointer-events: none;
+  position: fixed;
+  inset: 0;
+  z-index: 0;
+  transition: opacity 0.3s;
+  background: radial-gradient(
+    600px circle at var(--glow-x, -999px) var(--glow-y, -999px),
+    rgba(100, 255, 218, 0.04),
+    transparent 50%
+  );
+}
+
+/* Hidden scrollbar */
+::-webkit-scrollbar {
+  width: 0px;
+}
+* {
+  scrollbar-width: none;
+}
+
+/* Selection highlight */
+::selection {
+  background: var(--accent-dim);
+  color: var(--accent);
+}
+
+/* Link reset */
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+/* Pulsing dot animation for availability badge */
+@keyframes pulse {
+  0%, 100% { opacity: 1; }
+  50% { opacity: 0.3; }
+}
+
+/* 
+  Nav active state — Can use a custom CSS class `active` on the nav link.
+  We handle this in React with conditional classes, but keeping this here
+  as a fallback / reference for what the active state should look like.
+*/
+.nav .active .nav-indicator {
+  width: 4rem; /* w-16 */
+  background-color: var(--text-primary);
+}
+.nav .active .nav-text {
+  color: var(--text-primary);
+}
