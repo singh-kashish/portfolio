@@ -42,7 +42,7 @@ export const EXPERIENCE = [
     years: '2021 — 2022',
     role: 'Junior Frontend Engineer',
     company: 'SalesBook',
-    url: '#',
+    url: 'https://www.salesbook.com',
     description:
       'Built and shipped product features at a B2B SaaS startup. Full ownership of feature work from design handoff to deployment — React, TypeScript, and Axios across the core product. Resolved 80+ UI/UX bugs and consumed REST APIs to surface real-time sales data.',
     tags: ['React', 'TypeScript', 'Axios', 'TailwindCSS'],
@@ -94,10 +94,10 @@ export const PROJECTS = [
     name: 'Reddit Clone',
     description:
       'Full-stack Reddit clone with subreddits, posts, nested comments, upvoting, infinite scroll, and image uploads via Uploadthing. Built on Next.js App Router with Prisma and PostgreSQL.',
-    tags: ['Next.js', 'Prisma', 'PostgreSQL', 'Tailwind CSS', 'Uploadthing'],
-    github: 'https://github.com', // TODO
-    live: 'https://reddit-clone.vercel.app', // TODO
-    url: 'reddit-clone.vercel.app',
+    tags: ['Next.js', 'Supabase', 'Reddit OAuth', 'Tailwind CSS', 'Typescript'],
+    github: 'https://github.com/singh-kashish/redditClone', 
+    live: 'https://reddit-clone-2-teal.vercel.app/',
+    url: 'https://reddit-clone-2-teal.vercel.app/',
     image: '/screenshots/reddit.png',
   },
   {
@@ -105,9 +105,9 @@ export const PROJECTS = [
     description:
       'Take-home assignment — production-ready admin dashboard with TanStack Table, Shadcn/ui, advanced filtering, column visibility, and row selection. Pixel-perfect implementation from a Figma spec with a full feature sub-page.',
     tags: ['React', 'TanStack Table', 'Shadcn/ui', 'TypeScript'],
-    github: 'https://github.com', // TODO
-    live: 'https://tanstack-dash.vercel.app', // TODO
-    url: 'tanstack-dash.vercel.app',
+    github: 'https://github.com/singh-kashish/Order-Risk-Dashboard', 
+    live: 'https://order-risk-dashboard.vercel.app/order-risk', 
+    url: 'https://order-risk-dashboard.vercel.app/order-risk',
     image: '/screenshots/tanstack.png',
   },
 ]
