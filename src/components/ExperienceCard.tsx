@@ -54,7 +54,7 @@ export default function ExperienceCard({
       */}
       <div
         ref={cardRef}
-        className="group relative grid pb-1 transition-all sm:grid-cols-8 sm:gap-8 md:gap-4 lg:hover:!opacity-100 lg:group-hover/list:opacity-50"
+        className="group relative grid pb-1 transition-all sm:grid-cols-8 sm:gap-8 md:gap-4 lg:hover:opacity-100! lg:group-hover/list:opacity-50"
         style={{
           // Card glow follows cursor via CSS vars set by attachCardGlow
           ['--mx' as string]: '-999px',
@@ -69,7 +69,7 @@ export default function ExperienceCard({
           }}
           onMouseEnter={e => {
             const el = e.currentTarget
-            el.style.background = 'rgba(100,255,218,0.03)'
+            el.style.background = 'rgba(100,255,218,0.06)'
             el.style.boxShadow = 'inset 0 1px 0 0 rgba(100,255,218,0.08)'
           }}
           onMouseLeave={e => {

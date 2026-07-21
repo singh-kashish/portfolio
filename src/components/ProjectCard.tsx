@@ -59,13 +59,13 @@ export default function ProjectCard({ name, description, tags, github, live, url
     <li className="mb-12">
       <div
         ref={cardRef}
-        className="group relative grid gap-4 pb-1 transition-all sm:grid-cols-8 sm:gap-8 md:gap-4 lg:hover:!opacity-100 lg:group-hover/list:opacity-50"
+        className="group relative grid gap-4 pb-1 transition-all sm:grid-cols-8 sm:gap-8 md:gap-4 lg:hover:opacity-100! lg:group-hover/list:opacity-50"
       >
         {/* Hover background overlay */}
         <div className="absolute -inset-x-4 -inset-y-4 z-0 hidden rounded-xl transition motion-reduce:transition-none lg:-inset-x-6 lg:block lg:group-hover:drop-shadow-lg"
           style={{ ['--tw-drop-shadow' as string]: '' }}
           onMouseEnter={e => {
-            (e.currentTarget as HTMLElement).style.background = 'rgba(100,255,218,0.03)'
+            (e.currentTarget as HTMLElement).style.background = 'rgba(100,255,218,0.05)'
             ;(e.currentTarget as HTMLElement).style.boxShadow = 'inset 0 1px 0 0 rgba(100,255,218,0.08)'
           }}
           onMouseLeave={e => {
@@ -82,7 +82,7 @@ export default function ProjectCard({ name, description, tags, github, live, url
         />
 
         {/* Browser chrome mockup — order-1 on mobile, order-1 on sm (left col) */}
-        <div className="z-10 sm:order-1 sm:col-span-2 sm:translate-y-1"> {/*change here for extrawidth screen*/}
+        <div className="z-10 sm:order-1 sm:col-span-2 sm:translate-y-1!"> {/*change here for extrawidth screen*/}
           <div
             className="overflow-hidden rounded"
             style={{ border: '2px solid rgba(100,255,218,0.08)', transition: 'border-color 0.2s' }}
@@ -105,7 +105,7 @@ export default function ProjectCard({ name, description, tags, github, live, url
                   <button
                     key={m}
                     onClick={e => { e.stopPropagation(); setMode(m) }}
-                    className="text-[9px] px-1.5 py-0.5 rounded transition-all"
+                    className="text-[9px] px-1.5 py-0.5 rounded transition-all hover:bg-[#48BEA2]!"
                     style={{
                       fontFamily: 'monospace',
                       color: mode === m ? 'var(--accent)' : '#2a3a60',
@@ -128,7 +128,7 @@ export default function ProjectCard({ name, description, tags, github, live, url
                   className="w-full h-full border-0"
                   loading="lazy"
                   title={`${name} live preview`}
-                  style={{ transform: 'scale(0.5)', transformOrigin: 'top left', width: '200%', height: '200%' }}
+                  style={{ transform: 'scale(0.5)', transformOrigin: 'top left', width: '200%', height: '200%', backgroundColor: 'white' }}
                 />
               ) : image ? (
                 <img
@@ -162,14 +162,14 @@ export default function ProjectCard({ name, description, tags, github, live, url
         <div className="z-10 sm:order-2 sm:col-span-6">
           <h3>
             <a
-              className="group/link inline-flex items-baseline font-medium leading-tight text-base"
+              className="group/link inline-flex items-baseline font-medium leading-tight text-base hover:text-[#64ffda]!"
               href={live}
               target="_blank"
               rel="noreferrer noopener"
               aria-label={`${name} (opens in a new tab)`}
               style={{ color: 'var(--text-primary)' }}
             >
-              <span className="absolute -inset-x-4 -inset-y-2.5 hidden rounded md:-inset-x-6 md:-inset-y-4 lg:block" />
+              <span className="absolute -inset-x-4 -inset-y-2.5 hidden rounded md:-inset-x-6 md:-inset-y-4 lg:block pointer-events-none" />
               <span>
                 {name.split(' ').slice(0, -1).join(' ')}{' '}
                 <span className="inline-block">
@@ -215,9 +215,9 @@ export default function ProjectCard({ name, description, tags, github, live, url
           {/* Tech pills */}
           <ul className="mt-2 flex flex-wrap" aria-label="Technologies used">
             {tags.map(tag => (
-              <li key={tag} className="mr-1.5 mt-2">
+              <li key={tag} className="mr-1.5 mt-2 ">
                 <div
-                  className="flex items-center rounded-full px-3 py-1 text-xs font-medium leading-5"
+                  className="flex items-center rounded-full px-3 py-1 text-xs font-medium leading-5 shadow-2xl"
                   style={{
                     color: 'var(--accent)',
                     background: 'var(--accent-dim)',

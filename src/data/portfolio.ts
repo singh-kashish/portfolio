@@ -58,7 +58,7 @@ export const PROJECTS = [
     github: 'https://github.com/singh-kashish/TASK-MANAGEMENT-APP', 
     live: 'https://task-management-app-delta-sable.vercel.app/',
     url: 'https://task-management-app-delta-sable.vercel.app/',
-    image: '/screenshots/taskflow.png', // TODO: add real screenshot
+    image: 'https://private-user-images.githubusercontent.com/54403943/612701390-f2849e80-d0d3-4f89-b70b-f04a1aea5fd6.png?jwt=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJnaXRodWIuY29tIiwiYXVkIjoicmF3LmdpdGh1YnVzZXJjb250ZW50LmNvbSIsImtleSI6ImtleTUiLCJleHAiOjE3ODQ2MzE0NDQsIm5iZiI6MTc4NDYzMTE0NCwicGF0aCI6Ii81NDQwMzk0My82MTI3MDEzOTAtZjI4NDllODAtZDBkMy00Zjg5LWI3MGItZjA0YTFhZWE1ZmQ2LnBuZz9YLUFtei1BbGdvcml0aG09QVdTNC1ITUFDLVNIQTI1NiZYLUFtei1DcmVkZW50aWFsPUFLSUFWQ09EWUxTQTUzUFFLNFpBJTJGMjAyNjA3MjElMkZ1cy1lYXN0LTElMkZzMyUyRmF3czRfcmVxdWVzdCZYLUFtei1EYXRlPTIwMjYwNzIxVDEwNTIyNFomWC1BbXotRXhwaXJlcz0zMDAmWC1BbXotU2lnbmF0dXJlPWNjNzkxOWFjODdlZDY2ZmM5N2Y0OTY3MDZjNmVmYzgyZjE0Zjk4MTY2NDMyNTg1MjNlZjE0ZTYxZGI5MWVlYjgmWC1BbXotU2lnbmVkSGVhZGVycz1ob3N0JnJlc3BvbnNlLWNvbnRlbnQtdHlwZT1pbWFnZSUyRnBuZyJ9.hOxsR06NGvFlpMFWr9RS4z-ak2k_-Dyzhxk3VBPJ3Qk', // TODO: add real screenshot
   },
   {
     name: 'Delete Stale Git Branches',
@@ -68,7 +68,7 @@ export const PROJECTS = [
     github: 'https://github.com/singh-kashish/DeleteStaleGitBranches', 
     live: 'https://delete-stale-git-branches.vercel.app/', 
     url: 'https://delete-stale-git-branches.vercel.app/',
-    image: '/screenshots/git-sweep.png', // TODO: add real screenshot
+    image: '/screenshots/git-sweep.png',
   },
   {
     name: 'FlixPlay',
@@ -78,7 +78,7 @@ export const PROJECTS = [
     github: 'https://github.com/singh-kashish/youtubeClone', 
     live: 'https://youtube-clone-alpha-liard.vercel.app/', 
     url: 'https://youtube-clone-alpha-liard.vercel.app/',
-    image: '/screenshots/flixplay.png',// TODO: add real screenshot
+    image: '/screenshots/flixplay.png',
   },
   {
     name: 'Personal Finance Dashboard',
@@ -108,6 +108,6 @@ export const PROJECTS = [
     github: 'https://github.com/singh-kashish/Order-Risk-Dashboard', 
     live: 'https://order-risk-dashboard.vercel.app/order-risk', 
     url: 'https://order-risk-dashboard.vercel.app/order-risk',
-    image: '/screenshots/tanstack.png',
+    image: 'https://private-user-images.githubusercontent.com/54403943/566760117-b298a8d1-7f35-40e5-8082-c8f91c23b139.png?jwt=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJnaXRodWIuY29tIiwiYXVkIjoicmF3LmdpdGh1YnVzZXJjb250ZW50LmNvbSIsImtleSI6ImtleTUiLCJleHAiOjE3ODQ2Mzg2NTEsIm5iZiI6MTc4NDYzODM1MSwicGF0aCI6Ii81NDQwMzk0My81NjY3NjAxMTctYjI5OGE4ZDEtN2YzNS00MGU1LTgwODItYzhmOTFjMjNiMTM5LnBuZz9YLUFtei1BbGdvcml0aG09QVdTNC1ITUFDLVNIQTI1NiZYLUFtei1DcmVkZW50aWFsPUFLSUFWQ09EWUxTQTUzUFFLNFpBJTJGMjAyNjA3MjElMkZ1cy1lYXN0LTElMkZzMyUyRmF3czRfcmVxdWVzdCZYLUFtei1EYXRlPTIwMjYwNzIxVDEyNTIzMVomWC1BbXotRXhwaXJlcz0zMDAmWC1BbXotU2lnbmF0dXJlPWI4ZGFlNTI5OWQ4NDM3OGE0OGY0NTJmNDkxNGUwZWE2ZTNiNWRkZjA3YjE2YmYwNjBjZjkzNmI0ZTIzNGUwOTcmWC1BbXotU2lnbmVkSGVhZGVycz1ob3N0JnJlc3BvbnNlLWNvbnRlbnQtdHlwZT1pbWFnZSUyRnBuZyJ9.Z8TuOMEe_nEB9bFp3I41z5VRJZ7iELxPU_6WVmnOyjc',
   },
 ]

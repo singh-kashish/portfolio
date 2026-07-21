@@ -18,7 +18,7 @@ export default function Header({ activeSection, onNavClick }: HeaderProps) {
           className="mt-3 text-lg font-medium tracking-tight sm:text-xl"
           style={{ color: 'var(--text-primary)' }}
         >
-          Full-Stack Engineer
+          Full-stack Engineer
         </h2>
 
         <p className="mt-4 max-w-xs leading-normal" style={{ color: 'var(--text-secondary)' }}>
