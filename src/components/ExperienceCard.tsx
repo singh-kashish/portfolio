@@ -46,7 +46,7 @@ export default function ExperienceCard({
   return (
     <li className="mb-12">
       {/*
-        Brittany's pattern:
+        pattern:
         - group on the outer div
         - absolute overlay div for the hover background
         - lg:hover:!opacity-100 + lg:group-hover/list:opacity-50 for the dim-others effect
@@ -61,7 +61,7 @@ export default function ExperienceCard({
           ['--my' as string]: '-999px',
         }}
       >
-        {/* Hover background overlay — Brittany's exact approach */}
+        {/* Hover background overlay — exact approach */}
         <div
           className="absolute -inset-x-4 -inset-y-4 z-0 hidden rounded-xl transition motion-reduce:transition-none lg:-inset-x-6 lg:block"
           style={{
