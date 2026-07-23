@@ -131,6 +131,12 @@ export default function ProjectCard({ name, description, tags, github, live, url
                   alt={`${name} screenshot`}
                   className="w-full h-full object-cover object-top"
                   loading="lazy"
+                  onError={e => {
+                    const target = e.currentTarget;
+                    if (target.src !== '/images.png') {
+                      target.src = '/images.png';
+                    }
+                  }}
                 />
               ) : (
                 /* Placeholder grid until real screenshot is added */

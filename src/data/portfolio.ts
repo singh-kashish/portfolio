@@ -1,11 +1,3 @@
-export const NAV_ITEMS = [
-  { id: 'about', label: 'About' },
-  { id: 'experience', label: 'Experience' },
-  { id: 'projects', label: 'Projects' },
-] as const
-
-export type SectionId = (typeof NAV_ITEMS)[number]['id']
-
 export const SOCIAL_LINKS = [
   {
     label: 'GitHub',
@@ -28,27 +20,6 @@ export const SOCIAL_LINKS = [
   },
 ]
 
-export const EXPERIENCE = [
-  {
-    years: '2023 — 2025',
-    role: 'Software Engineer',
-    company: 'Deloitte USI',
-    url: 'https://www.deloitte.com',
-    description:
-      'Developed, maintained, and shipped responsive production frontend code for client web applications. Clients included Chubb Insurance, Kroger Co., and more.',
-    tags: ['React', 'TypeScript', 'Redux Toolkit', 'Material UI'],
-  },
-  {
-    years: '2021 — 2022',
-    role: 'Junior Frontend Engineer',
-    company: 'SalesBook',
-    url: 'https://www.salesbook.com',
-    description:
-      'Built and shipped product features at a B2B SaaS startup. Full ownership of feature work from design handoff to deployment — React, TypeScript, and Axios across the core product. Resolved 80+ UI/UX bugs and consumed REST APIs to surface real-time sales data.',
-    tags: ['React', 'TypeScript', 'Axios', 'TailwindCSS'],
-  },
-]
-
 export const PROJECTS = [
   {
     name: 'TaskFlow',
@@ -61,6 +32,16 @@ export const PROJECTS = [
     image: 'https://private-user-images.githubusercontent.com/54403943/612701390-f2849e80-d0d3-4f89-b70b-f04a1aea5fd6.png?jwt=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJnaXRodWIuY29tIiwiYXVkIjoicmF3LmdpdGh1YnVzZXJjb250ZW50LmNvbSIsImtleSI6ImtleTUiLCJleHAiOjE3ODQ2MzE0NDQsIm5iZiI6MTc4NDYzMTE0NCwicGF0aCI6Ii81NDQwMzk0My82MTI3MDEzOTAtZjI4NDllODAtZDBkMy00Zjg5LWI3MGItZjA0YTFhZWE1ZmQ2LnBuZz9YLUFtei1BbGdvcml0aG09QVdTNC1ITUFDLVNIQTI1NiZYLUFtei1DcmVkZW50aWFsPUFLSUFWQ09EWUxTQTUzUFFLNFpBJTJGMjAyNjA3MjElMkZ1cy1lYXN0LTElMkZzMyUyRmF3czRfcmVxdWVzdCZYLUFtei1EYXRlPTIwMjYwNzIxVDEwNTIyNFomWC1BbXotRXhwaXJlcz0zMDAmWC1BbXotU2lnbmF0dXJlPWNjNzkxOWFjODdlZDY2ZmM5N2Y0OTY3MDZjNmVmYzgyZjE0Zjk4MTY2NDMyNTg1MjNlZjE0ZTYxZGI5MWVlYjgmWC1BbXotU2lnbmVkSGVhZGVycz1ob3N0JnJlc3BvbnNlLWNvbnRlbnQtdHlwZT1pbWFnZSUyRnBuZyJ9.hOxsR06NGvFlpMFWr9RS4z-ak2k_-Dyzhxk3VBPJ3Qk', // TODO: add real screenshot
   },
   {
+    name: 'Pipeline Builder',
+    description:
+      'Drag-and-drop visual pipeline editor built with React Flow and Zustand. A FastAPI backend validates submitted graphs — exposing node/edge counts and running Kahn\'s algorithm (BFS topological sort) to detect cycles, correctly handling isolated nodes, disconnected graphs, and concurrent submissions via request-ordering guards.',
+    tags: ['React', 'React Flow', 'Zustand', 'FastAPI', 'Python', 'Pydantic'],
+    github: 'https://github.com/singh-kashish/pipelineFastAPI',
+    live: 'https://pipeline-fast-api.vercel.app/', // TODO: add once hosted
+    url: 'pipeline-builder.vercel.app',
+    image: '/screenshots/pipelineFastAPI.png',
+  },
+  {
     name: 'Delete Stale Git Branches',
     description:
       'GitHub developer tool that scans repos for merged and stale branches, previews what will be deleted, and batch-cleans with one click. Built for dev teams managing repos with 50+ branches — saves hours of manual cleanup per sprint.',
@@ -71,34 +52,14 @@ export const PROJECTS = [
     image: '/screenshots/git-sweep.png',
   },
   {
-    name: 'FlixPlay',
-    description:
-      'Full-stack YouTube-style video platform — upload, stream, like, comment, nested replies, and playlists. Likes on comments, a fully responsive video player, and JWT auth built with Next.js and MongoDB.',
-    tags: ['Next.js', 'MongoDB', 'Tailwind CSS', 'JWT', 'Cloudinary'],
-    github: 'https://github.com/singh-kashish/youtubeClone', 
-    live: 'https://youtube-clone-alpha-liard.vercel.app/', 
-    url: 'https://youtube-clone-alpha-liard.vercel.app/',
-    image: '/screenshots/flixplay.png',
-  },
-  {
     name: 'Personal Finance Dashboard',
     description:
       'Analytics dashboard for income, expense, and savings tracking with interactive Recharts visualizations. Node.js + TypeScript backend with Prisma, PostgreSQL, Zod validation, rotating HttpOnly refresh tokens, Swagger docs, and Jest + Supertest test coverage.',
     tags: ['React', 'Node.js', 'PostgreSQL', 'Prisma', 'Zod', 'Recharts'],
-    github: 'https://github.com', // TODO
+    github: 'https://github.com/singh-kashish/PersonalFinanceDashboard', // TODO
     live: 'https://finance.vercel.app', // TODO
     url: 'finance.vercel.app',
     image: '/screenshots/finance.png',
-  },
-  {
-    name: 'Reddit Clone',
-    description:
-      'Full-stack Reddit clone with subreddits, posts, nested comments, upvoting, infinite scroll, and image uploads via Uploadthing. Built on Next.js App Router with Prisma and PostgreSQL.',
-    tags: ['Next.js', 'Supabase', 'Reddit OAuth', 'Tailwind CSS', 'Typescript'],
-    github: 'https://github.com/singh-kashish/redditClone', 
-    live: 'https://reddit-clone-2-teal.vercel.app/',
-    url: 'https://reddit-clone-2-teal.vercel.app/',
-    image: '/screenshots/reddit.png',
   },
   {
     name: 'TanStack Dashboard',
@@ -111,3 +72,77 @@ export const PROJECTS = [
     image: 'https://private-user-images.githubusercontent.com/54403943/566760117-b298a8d1-7f35-40e5-8082-c8f91c23b139.png?jwt=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJnaXRodWIuY29tIiwiYXVkIjoicmF3LmdpdGh1YnVzZXJjb250ZW50LmNvbSIsImtleSI6ImtleTUiLCJleHAiOjE3ODQ2Mzg2NTEsIm5iZiI6MTc4NDYzODM1MSwicGF0aCI6Ii81NDQwMzk0My81NjY3NjAxMTctYjI5OGE4ZDEtN2YzNS00MGU1LTgwODItYzhmOTFjMjNiMTM5LnBuZz9YLUFtei1BbGdvcml0aG09QVdTNC1ITUFDLVNIQTI1NiZYLUFtei1DcmVkZW50aWFsPUFLSUFWQ09EWUxTQTUzUFFLNFpBJTJGMjAyNjA3MjElMkZ1cy1lYXN0LTElMkZzMyUyRmF3czRfcmVxdWVzdCZYLUFtei1EYXRlPTIwMjYwNzIxVDEyNTIzMVomWC1BbXotRXhwaXJlcz0zMDAmWC1BbXotU2lnbmF0dXJlPWI4ZGFlNTI5OWQ4NDM3OGE0OGY0NTJmNDkxNGUwZWE2ZTNiNWRkZjA3YjE2YmYwNjBjZjkzNmI0ZTIzNGUwOTcmWC1BbXotU2lnbmVkSGVhZGVycz1ob3N0JnJlc3BvbnNlLWNvbnRlbnQtdHlwZT1pbWFnZSUyRnBuZyJ9.Z8TuOMEe_nEB9bFp3I41z5VRJZ7iELxPU_6WVmnOyjc',
   },
 ]
+
+// ─── ARCHIVED PROJECTS (shown on /projects page only) ───────────────────────
+// Volume + consistency signal. No shame in clones — they show you ship.
+export const ARCHIVED_PROJECTS = [
+  {
+    year: '2024',
+    name: 'FlixPlay',
+    builtAt: 'Personal',
+    description: 'YouTube-style video platform — upload, stream, like, comment, nested replies, playlists. JWT auth, Cloudinary for video storage.',
+    tags: ['Next.js', 'Tailwind', 'Supabase' ],
+    github: 'https://github.com/singh-kashish/youtubeClone', 
+    live: 'https://youtube-clone-alpha-liard.vercel.app/', 
+  },
+  {
+    year: '2023',
+    name: 'Reddit Clone',
+    builtAt: 'Personal',
+    description: 'Full-stack Reddit clone — subreddits, posts, nested comments, upvoting, infinite scroll, image uploads via Uploadthing.',
+    tags: ['Next.js', 'Supabase', 'Reddit OAuth', 'Tailwind CSS', 'Typescript'],
+    github: 'https://github.com/singh-kashish/redditClone', 
+    live: 'https://reddit-clone-2-teal.vercel.app/',
+  },
+  {
+    year: '2022',
+    name: 'Amazon Clone',
+    builtAt: 'Personal',
+    description: 'E-commerce clone with product listing, cart, and order flow. Firebase auth and Firestore for data.',
+    tags: ['React', 'Firebase', 'Stripe'],
+    github: 'https://github.com/singh-kashish/amazon-clone',
+    live: 'https://amazon-clone.vercel.app',
+  },
+  {
+    year: '2023',
+    name: 'Airbnb UI Clone',
+    builtAt: 'Personal',
+    description: 'Pixel-accurate Airbnb landing page clone. Responsive layout, modal flows, and search bar interactions.',
+    tags: ['React', 'Tailwind CSS'],
+    github: 'https://github.com/singh-kashish/airbnb',
+    live: 'https://airbnb-smoky.vercel.app/',
+  },
+  
+]
+
+// ─── EXPERIENCE ──────────────────────────────────────────────────────────────
+export const EXPERIENCE = [
+  {
+    years: '2022 — 2024',
+    role: 'Software Engineer',
+    company: 'Deloitte USI',
+    url: 'https://www.deloitte.com',
+    description:
+      'Shipped frontend modules for Fortune 500 clients on Oracle HCM integrations — Chubb, Kroger, Atrium Health. Diagnosed a 9-second dashboard load on the Chubb account using React Profiler, resolved it with memo, useCallback, and Promise.all. Adopted Redwood UI components and delivered Kronos HCM integrations across multiple environments.',
+    tags: ['React', 'TypeScript', 'Oracle HCM', 'Redux Toolkit', 'Performance'],
+  },
+  {
+    years: '2021 — 2022',
+    role: 'Junior Frontend Engineer',
+    company: 'SalesBook',
+    url: 'https://salesbook.com',
+    description:
+      'Built and shipped product features at a B2B SaaS startup. Full ownership from design handoff to deployment — React, TypeScript, Axios across the core product. Resolved UI/UX bugs and consumed REST APIs to surface real-time sales data.',
+    tags: ['React', 'TypeScript', 'Axios', 'REST APIs'],
+  },
+]
+
+// ─── NAV + SOCIALS ───────────────────────────────────────────────────────────
+export const NAV_ITEMS = [
+  { id: 'about', label: 'About' },
+  { id: 'experience', label: 'Experience' },
+  { id: 'projects', label: 'Projects' },
+] as const
+
+export type SectionId = (typeof NAV_ITEMS)[number]['id']
+

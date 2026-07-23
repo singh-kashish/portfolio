@@ -51,25 +51,32 @@ body {
   );
 }
 
-/* Custom scrollbar — visible but subtle */
+/* Webkit (Chrome, Edge, Safari) */
 ::-webkit-scrollbar {
-  width: 6px;
+  width: 4px;         /* thin: change to 6px if you prefer thick */
 }
+
 ::-webkit-scrollbar-track {
   background: transparent;
+  /* Adds visual breathing room at top and bottom of the track */
+  margin-block: 4px;
 }
+
 ::-webkit-scrollbar-thumb {
-  background: #b3b3ae;
-  border-radius: 3px;
+  background: #3a3a38;       /* normal: light gray */
+  border-radius: 9999px;     /* fully rounded pill */
 }
+
 ::-webkit-scrollbar-thumb:hover {
-  background: #4a5568;
+  background: #555452;       /* hover: noticeably darker */
 }
+
 /* Firefox */
 * {
-  scrollbar-width: thick;
-  scrollbar-color: #71716f transparent;
+  scrollbar-width: thin;
+  scrollbar-color: #3a3a38 transparent;  /* thumb track */
 }
+
 
 /* Selection highlight */
 ::selection {

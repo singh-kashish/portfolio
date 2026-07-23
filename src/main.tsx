@@ -3,13 +3,14 @@ import { createRoot } from 'react-dom/client'
 import './index.css'
 import App from './App'
 import { BrowserRouter, Routes, Route } from 'react-router-dom'
+import ArchivedProjects from './components/ArchivedProjects'
 
 createRoot(document.getElementById('root')!).render(
   <StrictMode>
     <BrowserRouter>
       <Routes>
         <Route path="/" element={<App />} />
-        {/* <Route path="/projects" element={<ProjectsArchive />} /> */}
+        <Route path="/archive" element={<ArchivedProjects />} />
       </Routes>
     </BrowserRouter>
   </StrictMode>

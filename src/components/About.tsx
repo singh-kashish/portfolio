@@ -20,7 +20,11 @@ export default function About() {
 
       <div style={{ color: 'var(--text-secondary)' }}>
         <p className="mb-4">
-          Hi there! I'm Kashish, and I like building things. I'm a full-stack engineer with expertise in building accessible, pixel-perfect user interfaces and modern API. I take pride in crafting thoughtful, inclusive products and have a sharp eye for the small details that separate a good product from an exceptional one. Back in 2021, I got my first taste of real-world frontend work at{' '}
+          Hi there! I'm Kashish, and I like building things. I'm a full-stack engineer with expertise in
+          building accessible, pixel-perfect user interfaces and modern API. I take pride in crafting thoughtful,
+          inclusive products and have a sharp eye for the small details that separate a good product from an
+          exceptional one.
+          Back in 2022, I got my first taste of real-world frontend work at{' '}
           <a
             href="#"
             className="font-medium transition-colors"
@@ -46,11 +50,11 @@ export default function About() {
           , where I worked on Oracle HCM integrations for clients like Chubb, Kroger, and Atrium
           Health.
         </p>
-        <p className="mb-4">
-          My primary focus these days is building high-performance, full-stack products. I care
-          about the things that are easy to get wrong — auth race conditions, render bottlenecks,
-          API contracts that hold up under load. I enjoy taking a hard technical problem and making
-          the interface above it feel effortless.
+          <p className="mb-4">
+            I care about the things that are easy to get wrong—auth race conditions, render bottlenecks,
+            and API contracts that hold up under load. Whether it's debugging a 9-second dashboard load
+            with React Profiler or implementing Kahn's algorithm for DAG cycle detection in a visual pipeline builder,
+            I enjoy taking genuinely hard engineering problems and making the experience above them feel effortless.
         </p>
         <p>
           When I'm not at the keyboard, I'm at the gym or planning the next project. Currently
