@@ -104,7 +104,7 @@ export const ARCHIVED_PROJECTS = [
     live: 'https://amazon-clone.vercel.app',
   },
   {
-    year: '2023',
+    year: '2021',
     name: 'Airbnb UI Clone',
     builtAt: 'Personal',
     description: 'Pixel-accurate Airbnb landing page clone. Responsive layout, modal flows, and search bar interactions.',
@@ -112,6 +112,24 @@ export const ARCHIVED_PROJECTS = [
     github: 'https://github.com/singh-kashish/airbnb',
     live: 'https://airbnb-smoky.vercel.app/',
   },
+  {
+    year: '2021',
+    name: 'Youtube Search',
+    builtAt: 'Personal',
+    description: '',
+    tags: ['React', 'Firebase', 'Youtube Data API v3','Semantic UI'],
+    github: 'https://github.com/singh-kashish/youtubeSearch/',
+    live: 'https://search-313918.web.app/',
+  },
+  {
+    year: '2021',
+    name: 'Personal Website v0',
+    builtAt: 'Personal',
+    description: '',
+    tags: ['React'],
+    github: 'https://github.com/singh-kashish/portfolioV0/',
+    live: 'https://lucent-narwhal-310044.netlify.app/',
+  }
   
 ]
 

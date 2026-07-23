@@ -113,10 +113,10 @@ export default function ArchivedProjects() {
                         boxShadow: hoveredIdx === idx ? 'inset 0 1px 0 0 rgba(100,255,218,0.08)' : 'none',
                       }}
                     />
-                    <span className="relative z-10 font-mono text-xs">{proj.year}</span>
+                    <span className="relative z-10 font-mono text-xs font-normal">{proj.year}</span>
                   </td>
 
-                  <td className="py-4 pr-8 align-top">
+                  <td className="py-6 pr-8 align-top">
                     <div className="relative z-10">
                       <span
                         className="font-bold transition-colors"
