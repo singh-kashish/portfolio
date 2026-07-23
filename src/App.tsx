@@ -6,6 +6,7 @@ import Footer from './components/Footer'
 import { usePageGlow } from './hooks/useMouseGlow'
 import { useScrollSpy } from './hooks/useScrollSpy'
 import { NAV_ITEMS, type SectionId } from './data/portfolio'
+import { useEffect } from 'react'
 
 const SECTION_IDS = NAV_ITEMS.map(n => n.id)
 
@@ -16,12 +17,24 @@ export default function App() {
   // Scroll-spy — watches window scroll, returns current section id
   const activeSection = useScrollSpy(SECTION_IDS as unknown as SectionId[])
 
-  const scrollToSection = (id: SectionId) => {
-    const el = document.getElementById(id)
-    if (!el) return
-    // scroll-mt-24 = 96px offset — account for sticky mobile header
-    window.scrollTo({ top: el.offsetTop - 96, behavior: 'smooth' })
+  // On nav click — update URL without full navigation
+const scrollToSection = (id: SectionId) => {
+  const el = document.getElementById(id)
+  if (!el) return
+  window.history.pushState(null, '', `#${id}`)
+  window.scrollTo({ top: el.offsetTop - 96, behavior: 'smooth' })
+}
+
+// On mount — if URL has a hash, scroll to it
+useEffect(() => {
+  const hash = window.location.hash.slice(1) as SectionId
+  if (hash && SECTION_IDS.includes(hash)) {
+    setTimeout(() => {
+      const el = document.getElementById(hash)
+      if (el) window.scrollTo({ top: el.offsetTop - 96, behavior: 'instant' })
+    }, 50) // tiny delay so DOM is fully painted
   }
+}, [])
 
   return (
     /*

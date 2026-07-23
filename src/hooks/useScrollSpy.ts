@@ -15,6 +15,9 @@ export function useScrollSpy(sectionIds: SectionId[]): SectionId {
         }
       }
       setActive(current)
+      if (window.location.hash !== `#${current}`) {
+      window.history.replaceState(null, '', `#${current}`)
+      }
     }
 
     window.addEventListener('scroll', handler, { passive: true })

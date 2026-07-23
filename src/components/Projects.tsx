@@ -24,8 +24,8 @@ export default function Projects() {
       <div>
         {/* group/list — enables dim-others-on-hover across all project cards */}
         <ul className="group/list">
-          {PROJECTS.map(proj => (
-            <ProjectCard key={proj.name} {...proj} />
+          {PROJECTS.map((proj,index) => (
+            index<4?<ProjectCard key={proj.name} {...proj} />:null
           ))}
         </ul>
       </div>

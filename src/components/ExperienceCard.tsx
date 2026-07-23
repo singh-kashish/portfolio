@@ -37,53 +37,30 @@ export default function ExperienceCard({
   tags,
 }: ExperienceCardProps) {
   const cardRef = useRef<HTMLDivElement>(null)
+  const bgRef = useRef<HTMLDivElement>(null)
 
   useEffect(() => {
     if (!cardRef.current) return
-    return attachCardGlow(cardRef.current)
+    // Pass bgRef.current so attachCardGlow controls the bg too
+    return attachCardGlow(cardRef.current, bgRef.current)
   }, [])
 
   return (
     <li className="mb-12">
-      {/*
-        pattern:
-        - group on the outer div
-        - absolute overlay div for the hover background
-        - lg:hover:!opacity-100 + lg:group-hover/list:opacity-50 for the dim-others effect
-        - z-10 on actual content so it sits above the overlay
-      */}
       <div
         ref={cardRef}
-        className="group relative grid pb-1 transition-all sm:grid-cols-8 sm:gap-8 md:gap-4 lg:hover:opacity-100! lg:group-hover/list:opacity-50"
-        style={{
-          // Card glow follows cursor via CSS vars set by attachCardGlow
-          ['--mx' as string]: '-999px',
-          ['--my' as string]: '-999px',
-        }}
+        className="group relative grid gap-4 pb-1 transition-all sm:grid-cols-8 sm:gap-8 md:gap-4 lg:hover:opacity-100! lg:group-hover/list:opacity-50"
       >
-        {/* Hover background overlay — exact approach */}
+        {/* Background overlay — JS-controlled, NOT CSS-hover-controlled */}
         <div
-          className="absolute -inset-x-4 -inset-y-4 z-0 hidden rounded-xl transition motion-reduce:transition-none lg:-inset-x-6 lg:block"
-          style={{
-            // On group hover: show bg + inner shadow
-          }}
-          onMouseEnter={e => {
-            const el = e.currentTarget
-            el.style.background = 'rgba(100,255,218,0.06)'
-            el.style.boxShadow = 'inset 0 1px 0 0 rgba(100,255,218,0.08)'
-          }}
-          onMouseLeave={e => {
-            const el = e.currentTarget
-            el.style.background = ''
-            el.style.boxShadow = ''
-          }}
+          ref={bgRef}
+          className="absolute -inset-x-4 -inset-y-4 z-0 hidden rounded-xl transition-all duration-200 lg:-inset-x-6 lg:block"
         />
-        {/* Cursor glow overlay */}
+        {/* Cursor glow — reads --mx/--my set on cardRef */}
         <div
           className="pointer-events-none absolute -inset-x-4 -inset-y-4 z-0 hidden rounded-xl lg:-inset-x-6 lg:block"
           style={{
-            background:
-              'radial-gradient(500px circle at var(--mx) var(--my), rgba(100,255,218,0.05), transparent 50%)',
+            background: 'radial-gradient(400px circle at var(--mx,-999px) var(--my,-999px), rgba(100,255,218,0.08), transparent 50%)',
           }}
         />
 

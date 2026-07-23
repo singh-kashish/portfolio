@@ -48,11 +48,13 @@ function ExternalLinkIcon() {
 
 export default function ProjectCard({ name, description, tags, github, live, url, image }: ProjectCardProps) {
   const cardRef = useRef<HTMLDivElement>(null)
+  const bgRef = useRef<HTMLDivElement>(null)
   const [mode, setMode] = useState<'preview' | 'live'>('preview')
 
   useEffect(() => {
     if (!cardRef.current) return
-    return attachCardGlow(cardRef.current)
+    // Pass bgRef.current so attachCardGlow controls the bg too
+    return attachCardGlow(cardRef.current, bgRef.current)
   }, [])
 
   return (
@@ -61,23 +63,16 @@ export default function ProjectCard({ name, description, tags, github, live, url
         ref={cardRef}
         className="group relative grid gap-4 pb-1 transition-all sm:grid-cols-8 sm:gap-8 md:gap-4 lg:hover:opacity-100! lg:group-hover/list:opacity-50"
       >
-        {/* Hover background overlay */}
-        <div className="absolute -inset-x-4 -inset-y-4 z-0 hidden rounded-xl transition motion-reduce:transition-none lg:-inset-x-6 lg:block lg:group-hover:drop-shadow-lg"
-          style={{ ['--tw-drop-shadow' as string]: '' }}
-          onMouseEnter={e => {
-            (e.currentTarget as HTMLElement).style.background = 'rgba(100,255,218,0.05)'
-            ;(e.currentTarget as HTMLElement).style.boxShadow = 'inset 0 1px 0 0 rgba(100,255,218,0.08)'
-          }}
-          onMouseLeave={e => {
-            (e.currentTarget as HTMLElement).style.background = ''
-            ;(e.currentTarget as HTMLElement).style.boxShadow = ''
-          }}
+        {/* Background overlay — JS-controlled, NOT CSS-hover-controlled */}
+        <div
+          ref={bgRef}
+          className="absolute -inset-x-4 -inset-y-4 z-0 hidden rounded-xl transition-all duration-200 lg:-inset-x-6 lg:block"
         />
-        {/* Card cursor glow */}
+        {/* Cursor glow — reads --mx/--my set on cardRef */}
         <div
           className="pointer-events-none absolute -inset-x-4 -inset-y-4 z-0 hidden rounded-xl lg:-inset-x-6 lg:block"
           style={{
-            background: 'radial-gradient(500px circle at var(--mx,-999px) var(--my,-999px), rgba(100,255,218,0.05), transparent 50%)',
+            background: 'radial-gradient(400px circle at var(--mx,-999px) var(--my,-999px), rgba(100,255,218,0.08), transparent 50%)',
           }}
         />
 
