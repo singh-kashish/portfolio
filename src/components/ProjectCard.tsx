@@ -46,7 +46,7 @@ function ExternalLinkIcon() {
   )
 }
 
-export default function ProjectCard({ name, description, tags, github, live, url, image }: ProjectCardProps) {
+export default function ProjectCard({ name, description, tags, github, live, image }: ProjectCardProps) {
   const cardRef = useRef<HTMLDivElement>(null)
   const bgRef = useRef<HTMLDivElement>(null)
   const [mode, setMode] = useState<'preview' | 'live'>('preview')
