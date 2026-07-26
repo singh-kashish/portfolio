@@ -22,7 +22,7 @@ export const SOCIAL_LINKS = [
 
 export const PROJECTS = [
   {
-    name: 'TaskFlow',
+    name: 'TaskFlo',
     description:
       'Full-stack task management platform with production-grade JWT auth. Atomic refresh token rotation via a single MongoDB aggregation pipeline eliminates the race condition most auth systems silently ignore. HttpOnly cookies, CSRF protection, role-based access.',
     tags: ['React', 'TypeScript', 'Node.js', 'MongoDB', 'JWT', 'Express'],
@@ -69,7 +69,7 @@ export const PROJECTS = [
     github: 'https://github.com/singh-kashish/Order-Risk-Dashboard', 
     live: 'https://order-risk-dashboard.vercel.app/order-risk', 
     url: 'https://order-risk-dashboard.vercel.app/order-risk',
-    image: 'https://private-user-images.githubusercontent.com/54403943/566760117-b298a8d1-7f35-40e5-8082-c8f91c23b139.png?jwt=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJnaXRodWIuY29tIiwiYXVkIjoicmF3LmdpdGh1YnVzZXJjb250ZW50LmNvbSIsImtleSI6ImtleTUiLCJleHAiOjE3ODQ2Mzg2NTEsIm5iZiI6MTc4NDYzODM1MSwicGF0aCI6Ii81NDQwMzk0My81NjY3NjAxMTctYjI5OGE4ZDEtN2YzNS00MGU1LTgwODItYzhmOTFjMjNiMTM5LnBuZz9YLUFtei1BbGdvcml0aG09QVdTNC1ITUFDLVNIQTI1NiZYLUFtei1DcmVkZW50aWFsPUFLSUFWQ09EWUxTQTUzUFFLNFpBJTJGMjAyNjA3MjElMkZ1cy1lYXN0LTElMkZzMyUyRmF3czRfcmVxdWVzdCZYLUFtei1EYXRlPTIwMjYwNzIxVDEyNTIzMVomWC1BbXotRXhwaXJlcz0zMDAmWC1BbXotU2lnbmF0dXJlPWI4ZGFlNTI5OWQ4NDM3OGE0OGY0NTJmNDkxNGUwZWE2ZTNiNWRkZjA3YjE2YmYwNjBjZjkzNmI0ZTIzNGUwOTcmWC1BbXotU2lnbmVkSGVhZGVycz1ob3N0JnJlc3BvbnNlLWNvbnRlbnQtdHlwZT1pbWFnZSUyRnBuZyJ9.Z8TuOMEe_nEB9bFp3I41z5VRJZ7iELxPU_6WVmnOyjc',
+    image: '/screenshots/tanstack-dashboard.png',
   },
 ]
 

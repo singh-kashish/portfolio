@@ -54,7 +54,7 @@ export default function Experience() {
         <div className="mt-12">
           <a
             className="group/link inline-flex items-baseline font-semibold leading-tight text-base"
-            href="/resume.pdf"
+            href="/resume"
             target="_blank"
             rel="noreferrer noopener"
             aria-label="View Full Résumé (opens in a new tab)"
